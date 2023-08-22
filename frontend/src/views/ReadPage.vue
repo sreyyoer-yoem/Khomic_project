@@ -460,7 +460,7 @@ footer {
   }
   textarea {
   width: 50ch;
-  height: 10ch;
+  height: 9ch;
   padding: 10px;
   font-family: sans-serif;
 }
