@@ -1,4 +1,5 @@
 <template>
+  <section>
     <h2 class="text-success">Product</h2>
     <table class="table table-bordered w-200">
   <thead>
@@ -22,6 +23,8 @@
    
   </tbody>
 </table>
+    
+  </section>
 </template>
 <script setup>
 import { defineProps } from 'vue'

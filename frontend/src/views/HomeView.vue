@@ -1,43 +1,46 @@
 <template>
-    <div class="banner">
-        <img src="../assets/banner.png" alt="">
-    </div>
-    <div class="container">
-        <div class="new_story">
-            <h4>NEW STORY</h4>
+    <section>
+        <div class="banner">
+            <img src="../assets/banner.png" alt="">
         </div>
-        <hr>
-        <div class="card_container">
-            <div class="card" v-for="i in 10" :key="i">
-                <div class="img">
-                    <img src="../assets/card.jpg" alt="">
+        <div class="container">
+            <div class="new_story">
+                <h4>NEW STORY</h4>
+            </div>
+            <hr>
+            <div class="card_container">
+                <div class="card" v-for="i in 10" :key="i">
+                    <div class="img">
+                        <router-link to="/read">
+                            <img src="../assets/card.jpg" alt="">
+                        </router-link>
+                    </div>
+                    <div class="info">
+                        <p>Title</p>
+                        <i class="material-icons">favorite_border</i>
+                        <img class="add_wishlist" src="../assets/add_wishlist.png" alt="">
+                    </div>
                 </div>
-                <div class="info">
-                    <p>Title</p>
-                    <i class="material-icons">favorite_border</i>
-                    <img class="add_wishlist" src="../assets/add_wishlist.png" alt="">
-
+            </div>
+            <div class="new_story">
+                <h4>GENRES</h4>
+            </div>
+            <hr>
+            <div class="card_container">
+                <div class="card" v-for="i in 5" :key="i">
+                    <div class="img">
+                        <img src="../assets/ganre.webp" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Title</p>
+                        <i class="material-icons">favorite_border</i>
+                        <img class="add_wishlist" src="../assets/add_wishlist.png" alt="">
+    
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="new_story">
-            <h4>GENRES</h4>
-        </div>
-        <hr>
-        <div class="card_container">
-            <div class="card" v-for="i in 5" :key="i">
-                <div class="img">
-                    <img src="../assets/ganre.webp" alt="">
-                </div>
-                <div class="info">
-                    <p>Title</p>
-                    <i class="material-icons">favorite_border</i>
-                    <img class="add_wishlist" src="../assets/add_wishlist.png" alt="">
-
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 </template>
 <style scoped>
 .banner img {
@@ -55,7 +58,10 @@
 hr {
     margin-top: -10px;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
 .new_story h4 {
     background-color: rgb(73, 65, 65);
     padding: 10px;
@@ -78,7 +84,7 @@ hr {
     border-radius: 5px;
     height: 20%px;
     margin: 1%;
-
+    cursor: pointer;
 
 }
 
